@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
 }
+
 /* Khôi phục cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
@@ -29,12 +30,6 @@ a {
   letter-spacing: -0.76px;
 }
 
-.main-content {
-  width: 1170px;
-  max-width: calc(100% - 48px);
-  margin-left: auto;
-  margin-right: auto;
-}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -53,6 +48,13 @@ a {
   opacity: 0.9;
 }
 
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .line-clamp {
   /* Khi người dùng cho nội dung quá dài sẽ làm vỡ layout */
   display: -webkit-box;
@@ -61,7 +63,7 @@ a {
   overflow: hidden;
 }
 
-.line-clamp .line-2 {
+.line-clamp.line-2 {
   --line-clamp: 2;
 }
 
@@ -71,9 +73,9 @@ a {
   word-break: break-all;
 }
 
-/* Header */
+/* ======================== Header ==================== */
 .header {
-  background-color: #fffcf4;
+  background: #fffcf4;
 }
 .header.fixed {
   z-index: 1;
@@ -120,10 +122,10 @@ a {
   margin-left: 49px;
 }
 
-/* Hero */
+/* ========================== Hero ======================= */
 .hero {
   padding: 56px 0 65px;
-  background-color: #fffcf4;
+  background: #fffcf4;
 }
 .hero .body {
   display: flex;
@@ -134,9 +136,7 @@ a {
   width: 48%;
   position: relative;
 }
-.hero .content-block {
-  width: 52%;
-}
+
 .hero .media-block .img {
   width: 470px;
   height: 685px;
@@ -146,7 +146,7 @@ a {
 .hero .hero-summary {
   position: absolute;
   bottom: 48px;
-  right: 0px;
+  right: 0;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
@@ -219,7 +219,7 @@ a {
 .hero-cta {
   min-width: 180px;
   line-height: 64px;
-  background: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .hero .watch-video {
@@ -251,7 +251,7 @@ a {
 }
 
 .hero .desc-recent {
-  margin-top: 65px;
+  margin-top: 48px;
 }
 
 .hero .stats {
@@ -272,8 +272,8 @@ a {
 
 /* ========== Popular =========== */
 .popular {
-  margin-top: 135px;
   padding: 65px 0;
+  margin-top: 135px;
 }
 
 .popular-top {
@@ -295,7 +295,7 @@ a {
   gap: 18px;
 }
 
-.popular .control-btn {
+.popular-top .control-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,14 +303,15 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-.popular .control-btn:nth-child(2) {
+.popular-top .control-btn:last-of-type {
   background: var(--primary-color);
 }
 
-.popular .control-btn:hover {
+.popular-top .control-btn:hover {
   background: var(--primary-color);
   color: #fff;
   cursor: pointer;
@@ -370,6 +371,7 @@ a {
 }
 
 .popular .course-item .desc {
+  margin-top: 6px;
   color: #5f5b53;
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
@@ -379,16 +381,15 @@ a {
   margin-top: 12px;
 }
 
-.popular .foot .price {
+.popular .course-item .price {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67; /* 166.667% */
 }
 
-.popular .foot .btn-book {
+.popular .course-item .btn-book {
   border: none; /* Mặc định của thẻ button là có border nên phải none */
-  color: #fff;
 }
 
 .popular .foot .btn-book:hover {
@@ -436,21 +437,21 @@ a {
   line-height: 1.86; /* 185.714% */
 }
 
-.feedback-item .info .dots {
+.feedback-item .dots {
   margin-top: 28px;
   display: flex;
   gap: 6px;
-  cursor: pointer; /* Cho nút lick chuột thành hình bàn tay */
 }
 
-.feedback-item .info .dot {
+.feedback-item .dot {
   height: 6px;
   width: 6px;
   background-color: #634700;
   border-radius: 50%;
+  cursor: pointer; /* Cho nút lick chuột thành hình bàn tay */
 }
 
-.feedback-item .info .dot.active {
+.feedback-item .dot.active {
   background: var(--primary-color);
   cursor: default; /* Cho nút lick chuột trở lại mặc định */
 }
@@ -460,7 +461,7 @@ a {
   margin-left: auto; /* Marin left hay Space-between đều đc */
 }
 
-.feedback-item .content blockquote {
+.feedback-item blockquote {
   color: #fff;
   font-size: 2.6rem;
   font-style: italic;
@@ -490,7 +491,7 @@ a {
   object-fit: cover;
 }
 
-.features .images .lower {
+.features .lower {
   margin-top: 34px;
 }
 
@@ -501,14 +502,14 @@ a {
   width: 41%;
 }
 
-.features .content .desc {
+.features .desc {
   margin-top: 16px;
   color: #5f5b53;
   font-size: 1.6rem;
   line-height: 1.75; /* 175% */
 }
 
-.features .content .cta-btn {
+.features .cta-btn {
   margin-top: 32px;
   width: 137px;
   height: 50px;
@@ -520,7 +521,7 @@ a {
   margin-top: 70px;
 }
 
-.features .body .content {
+.features-2nd.content {
   width: 49%;
 }
 
@@ -549,35 +550,35 @@ a {
 }
 
 .blogs .blog-bot {
+  overflow: hidden;
   margin-top: 55px;
   display: flex;
   gap: 30px;
-  overflow: hidden;
 }
 
 .blogs .item:hover {
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
-.blog-bot .item {
+.blogs .item {
   width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #fff;
   flex-shrink: 0;
 }
 
-.blog-bot .item .thumb {
+.blogs .item .thumb {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 16px 16px 0px 0px;
 }
 
-.blog-bot .item .info {
+.blogs .item .info {
   padding: 20px 20px 28px;
 }
 
-.blog-bot .item .date {
+.blogs .item .date {
   position: relative;
   padding-bottom: 12px;
   display: inline-flex;
@@ -594,7 +595,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .blogs .item .date::after {
@@ -604,7 +605,6 @@ a {
   right: -27px;
   content: "";
   display: inline-block;
-  margin-right: 12px;
   height: 1px;
   border-radius: 0.5px;
   background: #e2dfda;
@@ -620,7 +620,7 @@ a {
 
 .blogs .item .btn {
   margin-top: 12px;
-  font-size: 1, 4rem;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover {
@@ -648,7 +648,7 @@ a {
 }
 
 /* =================== Footer ===================== */
-.footer {
+footer {
   background: #2e2100;
   padding: 96px 135px 0;
 }
@@ -667,7 +667,7 @@ a {
   width: 35%;
 }
 
-.footer .column .desc {
+.footer .desc {
   margin-top: 18px;
   max-width: 267px;
   color: #bfbcb2;
@@ -675,13 +675,13 @@ a {
   line-height: 1.86; /* 185.714% */
 }
 
-.footer .column .socials {
+.footer .socials {
   margin-top: 18px;
   display: flex;
   gap: 18px;
 }
 
-.footer .column .title {
+.footer .title {
   display: inline-block;
   padding-bottom: 14px;
   padding-right: 48px;
@@ -692,7 +692,7 @@ a {
   line-height: 1.75; /* 175% */
 }
 
-.footer .column .list {
+.footer .list {
   margin-top: 28px;
 }
 
@@ -703,6 +703,7 @@ a {
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
 }
+
 .footer .list li:last-child a {
   margin-bottom: 0;
 }

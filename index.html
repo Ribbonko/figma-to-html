@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon web -->
+    <link rel="shortcut icon" href="./assets/img/Logo-white.svg" type="image/x-icon" />
+
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -17,7 +20,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Project Figma</title>
   </head>
 
   <body>
@@ -26,22 +29,24 @@
       <div class="main-content">
         <div class="body-header">
           <!-- Logo -->
-          <img src="./assets/img/Logo.svg" alt="Lesson" class="logo" />
+          <a href="">
+            <img src="./assets/img/Logo.svg" alt="Lesson" class="logo" />
+          </a>
 
           <!-- Nav -->
           <nav class="nav">
             <ul>
               <li class="active">
-                <a href="#!">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#!">Courses</a>
+                <a href="#courses">Courses</a>
               </li>
               <li>
-                <a href="#!">Pricing</a>
+                <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#!">Reviews</a>
+                <a href="#reviews">Reviews</a>
               </li>
             </ul>
           </nav>
@@ -57,7 +62,7 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <div class="hero">
+      <div class="hero" id="home">
         <div class="main-content">
           <div class="body">
             <!-- Hero Left -->
@@ -133,7 +138,7 @@
       </div>
 
       <!-- Popular -->
-      <div class="popular">
+      <div class="popular" id="courses">
         <div class="main-content">
           <div class="popular-top">
             <!-- popular left -->
@@ -145,10 +150,14 @@
             <!-- popular right -->
             <div class="controls">
               <button class="control-btn">
-                <img src="./assets/Icon/prev.svg" alt="" />
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
               <button class="control-btn">
-                <img src="./assets/Icon/next.svg" alt="" />
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L1 13" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
             </div>
           </div>
@@ -221,251 +230,251 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Feedback -->
-        <div class="feedback">
-          <div class="main-content">
-            <div class="feedback-list">
-              <!-- Item 1 -->
-              <div class="feedback-item">
-                <!-- Khối bên trái -->
-                <div class="info">
-                  <img src="./assets/img/ava1.jpg" alt="Nene Himekawa" class="avatar" />
-                  <p class="member-name">Nene Himekawa</p>
-                  <p class="desc">Student of Web Design</p>
-                  <div class="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </div>
-                </div>
-
-                <!-- Khối bên phải -->
-                <div class="content">
-                  <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
-                  <blockquote>
-                    Not only does my resume look impressive—filled with the names and logos of world-class
-                    institutions—but these certificates also bring me closer to my career goals by validating the skills
-                    I've learned."
-                  </blockquote>
+      <!-- Feedback -->
+      <div class="feedback" id="pricing">
+        <div class="main-content">
+          <div class="feedback-list">
+            <!-- Item 1 -->
+            <div class="feedback-item">
+              <!-- Khối bên trái -->
+              <div class="info">
+                <img src="./assets/img/ava1.jpg" alt="Nene Himekawa" class="avatar" />
+                <p class="member-name">Nene Himekawa</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
                 </div>
               </div>
 
-              <!-- Item 2 -->
-              <div class="feedback-item">
-                <!-- Khối bên trái -->
-                <div class="info">
-                  <img src="./assets/img/ava2.jpg" alt="Nene Himekawa" class="avatar" />
-                  <p class="member-name">Nene Himekawa</p>
-                  <p class="desc">Student of Web Design</p>
-                  <div class="dots">
-                    <span class="dot"></span>
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                  </div>
-                </div>
-
-                <!-- Khối bên phải -->
-                <div class="content">
-                  <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
-                  <blockquote>
-                    Not only does my resume look impressive—filled with the names and logos of world-class
-                    institutions—but these certificates also bring me closer to my career goals by validating the skills
-                    I've learned."
-                  </blockquote>
-                </div>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="feedback-item">
-                <!-- Khối bên trái -->
-                <div class="info">
-                  <img src="./assets/img/ava3.jpg" alt="Nene Himekawa" class="avatar" />
-                  <p class="member-name">Nene Himekawa</p>
-                  <p class="desc">Student of Web Design</p>
-                  <div class="dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot active"></span>
-                  </div>
-                </div>
-
-                <!-- Khối bên phải -->
-                <div class="content">
-                  <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
-                  <blockquote>
-                    Not only does my resume look impressive—filled with the names and logos of world-class
-                    institutions—but these certificates also bring me closer to my career goals by validating the skills
-                    I've learned."
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Features -->
-        <div class="features">
-          <div class="main-content">
-            <div class="body">
-              <!-- Nội dung bên trái -->
-              <div class="images">
-                <img class="lower" src="./assets/img/learn1.jpg" alt="Learn1" />
-                <img src="./assets/img/learn2.jpg" alt="learn2" />
-              </div>
-
-              <!-- Nội dung bên phải -->
+              <!-- Khối bên phải -->
               <div class="content">
-                <!-- Tác dụng của dấu ^ để thằng content cùng cấp với images -->
-                <h2 class="heading-lv2">Learner outcomes through our awesome platform</h2>
-                <p class="desc">
-                  87% of people learning for professional development report career benefits like getting a promotion, a
-                  raise, or starting a new career.
-                </p>
-                <p class="desc">Lesson Impact Report (2022)</p>
-                <a href="#!" class="btn cta-btn">Sign Up</a>
+                <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but these certificates also bring me closer to my career goals by validating the skills
+                  I've learned."
+                </blockquote>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Features 2  -->
-        <div class="features features-2nd">
-          <div class="main-content">
-            <div class="body">
-              <!-- Nội dung bên trái -->
+            <!-- Item 2 -->
+            <div class="feedback-item">
+              <!-- Khối bên trái -->
+              <div class="info">
+                <img src="./assets/img/ava2.jpg" alt="Nene Himekawa" class="avatar" />
+                <p class="member-name">Nene Himekawa</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+
+              <!-- Khối bên phải -->
               <div class="content">
-                <h2 class="heading-lv2">Take the next step toward your personal and professional goals with Lesson.</h2>
-                <p class="desc">
-                  Take the next step toward. Join now to receive personalized and more recommendations from the full
-                  Coursera catalog.
-                </p>
-                <a href="#!" class="btn cta-btn">Join Now</a>
+                <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but these certificates also bring me closer to my career goals by validating the skills
+                  I've learned."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="feedback-item">
+              <!-- Khối bên trái -->
+              <div class="info">
+                <img src="./assets/img/ava3.jpg" alt="Nene Himekawa" class="avatar" />
+                <p class="member-name">Nene Himekawa</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                </div>
               </div>
 
-              <!-- Nội dung bên phải -->
-              <div class="images">
-                <img src="./assets/img/learn2.jpg" alt="learn2" />
+              <!-- Khối bên phải -->
+              <div class="content">
+                <img src="./assets/Icon/open-quote.svg" alt="" class="open-quotes" />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but these certificates also bring me closer to my career goals by validating the skills
+                  I've learned."
+                </blockquote>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Our Blog  -->
-        <div class="blogs">
-          <div class="main-content">
-            <!-- Blog top -->
-            <div class="blog-top">
-              <h2 class="heading-lv2">Our blog</h2>
-              <p class="desc">Read our regular travel blog and know the latest update of tour and travel</p>
+      <!-- Features -->
+      <div class="features">
+        <div class="main-content">
+          <div class="body">
+            <!-- Nội dung bên trái -->
+            <div class="images">
+              <img class="lower" src="./assets/img/learn1.jpg" alt="Learn1" />
+              <img src="./assets/img/learn2.jpg" alt="learn2" />
             </div>
 
-            <!-- Blog bot -->
-            <div class="blog-bot">
-              <!-- Item 1 -->
-              <div class="item">
-                <img src="./assets/img/blog1.jpg" alt="blog1" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
+            <!-- Nội dung bên phải -->
+            <div class="content">
+              <!-- Tác dụng của dấu ^ để thằng content cùng cấp với images -->
+              <h2 class="heading-lv2">Learner outcomes through our awesome platform</h2>
+              <p class="desc">
+                87% of people learning for professional development report career benefits like getting a promotion, a
+                raise, or starting a new career.
+              </p>
+              <p class="desc">Lesson Impact Report (2022)</p>
+              <a href="#!" class="btn cta-btn">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <!-- Item 2 -->
-              <div class="item">
-                <img src="./assets/img/blog2.jpg" alt="blog2" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
+      <!-- Features 2  -->
+      <div class="features features-2nd">
+        <div class="main-content">
+          <div class="body">
+            <!-- Nội dung bên trái -->
+            <div class="content">
+              <h2 class="heading-lv2">Take the next step toward your personal and professional goals with Lesson.</h2>
+              <p class="desc">
+                Take the next step toward. Join now to receive personalized and more recommendations from the full
+                Coursera catalog.
+              </p>
+              <a href="#!" class="btn cta-btn">Join Now</a>
+            </div>
 
-              <!-- Item 3 -->
-              <div class="item">
-                <img src="./assets/img/blog3.jpg" alt="blog3" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
+            <!-- Nội dung bên phải -->
+            <div class="images">
+              <img src="./assets/img/learn2.jpg" alt="learn2" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <!-- Item 4 -->
-              <div class="item">
-                <img src="./assets/img/blog4.jpg" alt="blog4" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
+      <!-- Our Blog  -->
+      <div class="blogs" id="reviews">
+        <div class="main-content">
+          <!-- Blog top -->
+          <div class="blog-top">
+            <h2 class="heading-lv2">Our blog</h2>
+            <p class="desc">Read our regular travel blog and know the latest update of tour and travel</p>
+          </div>
 
-              <!-- Item 5 -->
-              <div class="item">
-                <img src="./assets/img/blog5.jpg" alt="blog5" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
-
-              <!-- Item 6 -->
-              <div class="item">
-                <img src="./assets/img/blog6.jpg" alt="blog6" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
-
-              <!-- Item 7 -->
-              <div class="item">
-                <img src="./assets/img/blog7.jpg" alt="blog7" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
-
-              <!-- Item 8 -->
-              <div class="item">
-                <img src="./assets/img/blog8.jpg" alt="blog8" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
-              </div>
-
-              <!-- Item 9 -->
-              <div class="item">
-                <img src="./assets/img/blog9.jpg" alt="blog9" class="thumb" />
-                <div class="info">
-                  <span class="date">21 November 2021</span>
-                  <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                  <a href="" class="btn">Read More</a>
-                </div>
+          <!-- Blog bot -->
+          <div class="blog-bot">
+            <!-- Item 1 -->
+            <div class="item">
+              <img src="./assets/img/blog1.jpg" alt="blog1" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
               </div>
             </div>
 
-            <!-- 3 dấu chấm ở dưới -->
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot active"></span>
-              <span class="dot"></span>
+            <!-- Item 2 -->
+            <div class="item">
+              <img src="./assets/img/blog2.jpg" alt="blog2" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
             </div>
+
+            <!-- Item 3 -->
+            <div class="item">
+              <img src="./assets/img/blog3.jpg" alt="blog3" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+              <img src="./assets/img/blog4.jpg" alt="blog4" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+              <img src="./assets/img/blog5.jpg" alt="blog5" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item">
+              <img src="./assets/img/blog6.jpg" alt="blog6" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="item">
+              <img src="./assets/img/blog7.jpg" alt="blog7" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="item">
+              <img src="./assets/img/blog8.jpg" alt="blog8" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="item">
+              <img src="./assets/img/blog9.jpg" alt="blog9" class="thumb" />
+              <div class="info">
+                <span class="date">21 November 2021</span>
+                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 dấu chấm ở dưới -->
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
           </div>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
       <div class="main-content">
         <!-- Footer ở trên -->
         <div class="row">
@@ -537,10 +546,10 @@
                 <a href="#!"><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</a>
               </li>
               <li>
-                <a href="#!"><strong>Email:</strong> duc506909@gmail.com</a>
+                <a href="mailto:duc506909@gmail.com"><strong>Email:</strong> duc506909@gmail.com</a>
               </li>
               <li>
-                <a href="#!"><strong>Phone:</strong> + 000 0923 266 134</a>
+                <a href="tel:0923266134"><strong>Phone:</strong> +84 0923266134</a>
               </li>
             </ul>
           </div>
@@ -551,6 +560,6 @@
           <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
