@@ -52,6 +52,25 @@ a {
   cursor: pointer; /* Giúp khi di chuột vào hiện thành chỗ click được */
   opacity: 0.9;
 }
+
+.line-clamp {
+  /* Khi người dùng cho nội dung quá dài sẽ làm vỡ layout */
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp .line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  /* Khi người dùng cho nội dung quá dài và không có DẤU CÁCH sẽ làm vỡ layout */
+
+  word-break: break-all;
+}
+
 /* Header */
 .header {
   background-color: #fffcf4;
@@ -304,6 +323,7 @@ a {
 }
 
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
@@ -373,4 +393,69 @@ a {
 
 .popular .foot .btn-book:hover {
   background: var(--primary-color);
+}
+
+/* =============== Feedback =============== */
+.feedback {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 96px 0;
+}
+
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback-item .info .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.feedback-item .info .dot {
+  height: 6px;
+  width: 6px;
+  background-color: #634700;
+  border-radius: 50%; /* Cho nút lick chuột thành hình bàn tay */
+}
+
+.feedback-item .info .dot.active {
+  background: var(--primary-color);
+  cursor: default; /* Cho nút lick chuột trở lại mặc định */
+}
+
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto; /* Marin left hay Space-between đều đc */
+}
+
+.feedback-item .content blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
 }
